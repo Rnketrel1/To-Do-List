@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webpack template</title>
+    <title>To-Do-List</title>
+    <script
+      src="https://kit.fontawesome.com/91e33f38c9.js"
+      crossorigin="anonymous"
+    ></script>
   <script defer src="main.js"></script></head>
   <body>
-    <h3>Hello world</h3>
+    <div class="projects container">
+      <h1>To Do's</h1>
+      <div class="standard"></div>
+      <div class="user-projects">
+        <div class="add-project">
+          <label for="add-project">Projects</label>
+          <button class="add-project-button">+</button>
+        </div>
+        <div class="user-projects"></div>
+      </div>
+    </div>
+
+    <div class="to-dos-container container">
+      <h1 class="to-do-header">Click A Project</h1>
+      <div class="to-dos">
+        <input
+          class="to-do-input"
+          type="text"
+          placeholder="Add a task - press ENTER to submit"
+        />
+        <div class="added-to-dos"></div>
+      </div>
+    </div>
+
+    <div class="edit-to-do container">
+      <div class="edit-header">
+        <h1>Click On A To-Do To Edit</h1>
+      </div>
+    </div>
   </body>
 </html>
