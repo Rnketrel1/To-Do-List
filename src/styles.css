@@ -1,1 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  height: 100vh;
+  display: flex;
+  background-color: #1b1b1f;
+  color: rgb(212, 212, 212);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 5px;
+  padding: 33px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1b1b1b;
+  border: 1px solid #4d4d4d;
+  border-radius: 7px;
+  align-items: center;
+}
+
+.projects {
+  width: 27%;
+}
+
+.to-dos-container {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.edit-to-do {
+  width: 50%;
+}
+
+.standard {
+  width: 100%;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #3a3a3a;
+  border-radius: 1px;
+}
+
+.standard-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.user-projects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-project-button {
+  color: rgb(212, 212, 212);
+  background-color: #1b1b1b;
+  border: none;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.to-do-header {
+  margin: 23px;
+  margin-top: 2px;
+  padding-bottom: 39px;
+  border-bottom: 3px solid #3a3a3a;
+}
+
+.to-dos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.to-do-input {
+  color: #9c9c9c;
+}
+
+.project-lists {
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-lists:hover {
+  border: 2px solid #4cafa7;
+  border-radius: 10px;
+}
+
+i {
+  margin-top: 2px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+i:hover {
+  color: #4cafa7;
+}
+
+.delete-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.to-do-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.to-do-container:hover {
+  border: 2px solid #4cafa7;
+  border-radius: 10px;
+}
+
+.edit-header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  background-color: #3a3a3a;
+  color: #696969;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  appearance: none; /* Removes the default checkbox styling */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4cafa7;
+  border-color: #ffffff;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2714";
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  left: 4px;
+  top: 1px;
+}
+h1 {
+  font-weight: 490;
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  height: 27px;
+  background-color: #2b2b2b;
+  border: none;
+  padding: 5px;
+  color: #9c9c9c;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  color: #4cafa7;
+}

@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "webpack template",
+      title: "To-Do-List",
       filename: "index.html",
       template: "./src/template.html",
     }),
